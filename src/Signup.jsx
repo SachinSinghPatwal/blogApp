@@ -49,6 +49,7 @@ function Signup() {
         <form onSubmit={handleSubmit(create)}>
           <div className="space-y-5 grid place-items-center">
             <Input
+              className="mt-3"
               label="Full Name: "
               placeholder="Enter your full name"
               {...register("name", {
