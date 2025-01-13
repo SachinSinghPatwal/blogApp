@@ -129,9 +129,8 @@ export default function PostForm({ post }) {
           type="submit"
           bgColor={post ? "bg-green-500" : undefined}
           className="w-full"
-        >
-          {post ? "Update" : "Submit"}
-        </Button>
+          Children={post ? "Update" : "Submit"}
+        ></Button>
       </div>
     </form>
   );
