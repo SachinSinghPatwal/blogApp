@@ -26,7 +26,7 @@ function Signup() {
   return (
     <div className="flex items-center justify-center">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}
+        className={`mx-auto w-full max-w-lg bg-gray-500 rounded-xl p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-[100px]">
@@ -47,7 +47,7 @@ function Signup() {
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
         <form onSubmit={handleSubmit(create)}>
-          <div className="space-y-5">
+          <div className="space-y-5 grid place-items-center">
             <Input
               label="Full Name: "
               placeholder="Enter your full name"
@@ -76,7 +76,11 @@ function Signup() {
                 required: true,
               })}
             />
-            <Button type="submit" className="w-full">
+            <Button
+              type="submit"
+              className="w-full"
+              Children={"Create Account"}
+            >
               Create Account
             </Button>
           </div>
