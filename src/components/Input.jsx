@@ -5,7 +5,6 @@ const Input = React.forwardRef(function Input(
   ref
 ) {
   const id = useId();
-  console.log({ ...props });
   return (
     <div className="">
       {label && (
